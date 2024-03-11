@@ -1,0 +1,12 @@
+.breadcrumb-item {
+  & + .breadcrumb-item::before {
+    color: $white;
+  }
+}
+
+.breadcrumb-shape-thumbnail {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,49 @@
+@import '../common.scss';
+
+.section-introduction {
+  background: #f9f9f9;
+  &__top {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+  }
+  &__thumbnail {
+    border-radius: 1rem;
+    margin-right: 6rem;
+  }
+}
+
+.stat-box {
+  figure {
+    width: 8.5rem;
+    height: 8.5rem;
+    background: $white;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.09);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    border-radius: 100%;
+  }
+  h4 {
+    font-weight: 600;
+  }
+  p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: rgba(34, 34, 34, 0.8);
+    font-weight: 500;
+  }
+  .btn-readmore {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $primary;
+    i {
+      transition: all 0.3s ease;
+      margin-left: 0.4rem;
+    }
+    &:hover {
+      i {
+        margin-left: 0.8rem;
+      }
+    }
+  }
+}

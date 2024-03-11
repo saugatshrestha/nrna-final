@@ -1,0 +1,61 @@
+@import '../common.scss';
+
+.section-contact {
+  background: #ffffff;
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    &-left {
+      grid-column: 1 / span 5;
+    }
+    &-right {
+      grid-column: 7 / span 6;
+    }
+  }
+  .contact-form {
+    background: #f0efea;
+    padding: 4rem 4rem;
+    border-radius: 1rem;
+    &__thumbnail {
+      top: 3rem;
+      right: 2.5rem;
+      max-width: 20rem;
+    }
+    p {
+      color: rgb(72, 72, 75);
+      width: 80%;
+    }
+    .form-control {
+      border: none;
+      font-size: 1.6rem;
+      border: 1px solid #eeeeee;
+    }
+    textarea.form-control {
+      height: 20rem;
+    }
+  }
+}
+
+.contact-info {
+  li {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    .icon {
+      width: 6rem;
+      height: 6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100%;
+      background: #f0efea;
+      font-size: 2.2rem;
+    }
+    p {
+      max-width: 35rem;
+    }
+  }
+}

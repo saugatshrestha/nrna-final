@@ -1,0 +1,38 @@
+@import '../common.scss';
+
+.section-leadspace {
+  height: calc(100dvh - 21rem);
+  .leadspace-slider {
+    .swiper-slide {
+      img {
+        height: calc(100dvh - 21rem);
+      }
+    }
+    &:hover {
+      .swiper-button-prev {
+        left: 5rem;
+      }
+      .swiper-button-next {
+        right: 5rem;
+      }
+    }
+  }
+}
+.swiper-button-prev {
+  left: -5rem;
+}
+.swiper-button-next {
+  right: -5rem;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: $white;
+  transition: all 0.4s ease;
+}
+.swiper-pagination {
+  &-bullet {
+    background: $white;
+    width: 1rem;
+    height: 1rem;
+  }
+}

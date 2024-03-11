@@ -1,0 +1,22 @@
+/* ==============================================
+   Global App SCSS
+   ============================================== */
+
+@import './custom';
+
+// Swiper Slider
+@import '../../node_modules/swiper/swiper';
+@import '../../node_modules/swiper/swiper-bundle.css';
+
+// Add additional custom code here
+@import 'components/accordion';
+@import 'components/breadcrumb';
+
+// 1. Global Components to use
+@import 'layout/header';
+@import 'layout/offcanvas';
+@import 'layout/footer';
+@import 'layout/main';
+@import 'layout/post';
+@import 'layout/post-restricted';
+@import 'layout/post-basic';

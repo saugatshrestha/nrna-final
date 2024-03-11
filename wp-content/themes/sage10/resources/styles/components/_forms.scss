@@ -1,0 +1,122 @@
+.form {
+  &-control {
+    border: 0.1rem solid #aaa;
+    box-shadow: none;
+    outline: none;
+    padding: 1rem 1.5rem;
+    color: $black;
+    height: 5rem;
+    border-radius: 0.4rem;
+
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+
+    @include placeholder {
+      color: #aaa;
+    }
+  }
+}
+.form-check {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+
+  .form-check-label {
+    margin-left: 0.8rem;
+  }
+}
+.form-check-input {
+  border: 0.15rem solid black;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-top: 0;
+
+  // &:checked[type="radio"] {
+  //     background-image: url("#{$theme-imgpath}custom-checked.svg");
+  // }
+
+  &[type='checkbox'] {
+    border-radius: 0;
+  }
+
+  &:checked[type='checkbox'] {
+    border: 0.15rem solid black;
+    background-image: none;
+    background-color: transparent;
+    position: relative;
+
+    &::after {
+      content: $icon-close;
+      position: absolute;
+      top: -0.9rem;
+      left: -0.1rem;
+      @include icons-pseudo;
+
+      font-size: 1.6rem;
+      color: green;
+    }
+  }
+}
+.invalid {
+  .wpcf7-response-output {
+    border: none !important;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 1rem !important;
+    margin: 2rem 0 0 !important;
+  }
+  .hasError {
+    outline: 0;
+    border: 0.13rem solid green;
+    color: green;
+    position: relative;
+
+    @include placeholder {
+      color: green;
+    }
+  }
+}
+.requiblack-note {
+  font-size: 1.4rem;
+  font-weight: $font-weight-bold;
+  line-height: 1.43;
+}
+.btn-submit {
+  border: none;
+  background: none;
+  width: 5rem;
+  height: 100%;
+  right: 0;
+  svg {
+    width: 2.4rem;
+  }
+}
+
+.subscribe-form {
+  form {
+    position: relative;
+    max-width: 34rem;
+    .form-control {
+      border: none;
+      background: $white;
+      color: $black;
+      padding: 1rem 4rem 1rem 1.5rem;
+    }
+    .btn-submit {
+      background: none;
+      border: none;
+      color: $black;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      font-size: 2.4rem;
+      padding: 0;
+      svg {
+        width: 3.6rem;
+      }
+    }
+  }
+}

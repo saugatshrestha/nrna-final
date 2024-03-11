@@ -1,0 +1,25 @@
+@import '../common.scss';
+
+.section-team {
+  background: #f5f6f7;
+}
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  row-gap: 3.5rem;
+  column-gap: 2.5rem;
+  .team-item {
+    figure {
+      margin-bottom: 1rem;
+      img {
+        border-radius: 1.2rem;
+        aspect-ratio: 3/3.4;
+      }
+    }
+    &__details {
+      p {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
